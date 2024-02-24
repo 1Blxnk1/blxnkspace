@@ -25,6 +25,24 @@ section {
   position: relative;
   width: 100vw;
 }
+/* CSS for larger screens */
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+/* CSS for smaller screens */
+@media screen and (max-width: 600px) {
+  li {
+    list-style-type: circle;
+    margin-left: 10px;
+  }
+}
 
 section.min-height {
   min-height: 100vh;
