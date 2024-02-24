@@ -38,7 +38,7 @@ const projectList = [
   {
     title: "Coming soon...",
     description: "Project still to be uploaded.",
-    url: "https://github.com/microsoft/web-dev-for-beginners",
+    url: "",
   },
   {
     title: "Coming soon...",

@@ -18,13 +18,13 @@ import React from "react";
  */
 import image from "../images/midnight-fill.png";
 
-const imageAltText = "purple and blue abstract background";
+const imageAltText = "My favourite colour";
 
 /**
  * Sort description that expands on your title on the Home component.
  */
 const description =
-  "I'm a Computer Science studying at Eduvos Midrand Campus (Previously known as Pearson Institute of Higher Education). I enjoy coding and expanding my skill set with wit projects.";
+  "I'm a Computer Science student studying at Eduvos Midrand Campus (Previously known as Pearson Institute of Higher Education). I enjoy coding and expanding my skill set with projects.";
 
 /**
  * List of some of skills or technologies you work on, are learning,
