@@ -20,6 +20,23 @@ section {
   position: relative;
 }
 
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  margin-left: 20px;
+  list-style-type: disc;
+}
+
+@media screen and (max-width: 600px) {
+  li {
+    margin-left: 10px;
+    list-style-type: circle;
+  }
+}
+
 section.min-height {
   min-height: 100vh;
 }
