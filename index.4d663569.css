@@ -30,10 +30,15 @@ li {
   list-style-type: disc;
 }
 
+@media screen and (min-width: 601px) {
+  body {
+    font-size: 16px;
+  }
+}
+
 @media screen and (max-width: 600px) {
-  li {
-    margin-left: 10px;
-    list-style-type: circle;
+  body {
+    font-size: 14px;
   }
 }
 
