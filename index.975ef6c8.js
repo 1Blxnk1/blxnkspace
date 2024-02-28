@@ -27198,7 +27198,7 @@ const imageAltText = "My favourite colour";
  * Use this to give more information about what you are passionate about,
  * how you best work, or even a quote. This will help someone learn more
  * about you on a professional level.
- */ const detailOrQuote = "I am passionate about solving problems in new unusual ways. By leveraging my knowledge I continually look for new and better ways to solve problems.";
+ */ const detailOrQuote = "As a dedicated professional, I am deeply committed to leveraging my expertise in Python, Delphi, SQL, Docker, Database Design, and Graphic Design to devise innovative solutions. I thrive on challenges and constantly seek out new learning opportunities to enhance my skill set and deliver exceptional results.";
 const About = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
         className: "padding",
