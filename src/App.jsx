@@ -29,7 +29,7 @@ const siteProps = {
   email: "tadyshonhiwa@Gmail.com",
   gitHub: "1Blxnk1",
   instagram: "tady.wont.miss",
-  linkedIn: "tadyshonhiwa",
+  linkedIn: "tadiwa-shonhiwa-b830b52a6",
   medium: "",
   twitter: "",
   youTube: "",

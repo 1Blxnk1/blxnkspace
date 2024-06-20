@@ -30,7 +30,7 @@ const description =
  * List of some of skills or technologies you work on, are learning,
  * passionate about, or enjoy,
  */
-const skillsList = ["Python", "Delphi", "SQL", "Docker", "Database Design", "Graphic design"];
+const skillsList = ["Python", "Delphi", "SQL", "C++", "Database Design", "Graphic design"];
 
 /**
  * Use this to give more information about what you are passionate about,
@@ -39,7 +39,7 @@ const skillsList = ["Python", "Delphi", "SQL", "Docker", "Database Design", "Gra
  */
 
 const detailOrQuote =
-  "As a dedicated professional, I am deeply committed to leveraging my expertise in Python, Delphi, SQL, Docker, Database Design, and Graphic Design to devise innovative solutions. I thrive on challenges and constantly seek out new learning opportunities to enhance my skill set and deliver exceptional results.";
+  "As a dedicated professional, I am deeply committed to leveraging my skills. I thrive on challenges and constantly seek out new learning opportunities to enhance my skill set and deliver exceptional results.";
 const About = () => {
   return (
     <section className="padding" id="about">
