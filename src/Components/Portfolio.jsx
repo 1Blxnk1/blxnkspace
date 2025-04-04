@@ -26,7 +26,7 @@ const projectList = [
   {
     title: "Coding Club Hackathon Site",
     description:
-      "A responsive website built using Tailwind CSS and HTML during a 48-hour hackathon. Designed to promote coding culture at Eduvos campus.",
+      "A responsive website built using Tailwind CSS and next.js during a 5-day hackathon. Designed to promote coding culture at Eduvos campus.",
     url: "https://github.com/1Blxnk1/coding-club-site-vossie",
   },
   // Add more real projects here as you build them
@@ -34,25 +34,36 @@ const projectList = [
 
 const Portfolio = () => {
   return (
-    <section className="padding" id="portfolio">
-      <h2 style={{ textAlign: "center" }}>Portfolio</h2>
-      <div style={{ display: "flex", flexDirection: "row", paddingTop: "3rem" }}>
-        <div style={{ maxWidth: "40%", alignSelf: "center" }}>
-          <img
-            src={image}
-            style={{ height: "90%", width: "100%", objectFit: "cover" }}
-            alt={imageAltText}
-          />
-        </div>
-        <div className="container">
-          {projectList.map((project) => (
-            <div className="box" key={project.title}>
-              <a href={project.url} target="_blank" rel="noopener noreferrer">
-                <h3 style={{ flexBasis: "40px" }}>{project.title}</h3>
-              </a>
-              <p className="small">{project.description}</p>
-            </div>
-          ))}
+    <section className="portfolio-section" id="portfolio">
+      <div className="container">
+        <h2 className="section-title">Portfolio</h2>
+        
+        <div className="portfolio-content">
+          <div className="portfolio-image">
+            <img src={image} alt={imageAltText} />
+          </div>
+          
+          <div className="projects-container">
+            {projectList.length === 0 ? (
+              <p className="no-projects">Projects coming soon!</p>
+            ) : (
+              projectList.map((project, index) => (
+                <div className="project-card" key={index}>
+                  <h3 className="project-title">{project.title}</h3>
+                  <p className="project-description">{project.description}</p>
+                  <a 
+                    href={project.url} 
+                    className="project-link" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    aria-label={`View ${project.title} project`}
+                  >
+                    View Project
+                  </a>
+                </div>
+              ))
+            )}
+          </div>
         </div>
       </div>
     </section>

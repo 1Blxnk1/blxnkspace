@@ -6,8 +6,9 @@
  */
 
 import React from "react";
-import arrowSvg from "../images/down-arrow.svg";
 import PropTypes from "prop-types";
+import arrowSvg from "../images/down-arrow.svg";
+import "../styles.css"; // Ensure global styles are imported
 
 /**
  * Home background image
@@ -22,19 +23,30 @@ import PropTypes from "prop-types";
  */
 import image from "../images/background-img.jpg";
 
-const imageAltText =
-  "Adult female in office setting leaning against a glass wall while holding a platinum Microsoft Surface Pro 7 in tablet mode preparing to write with Microsoft Surface Pen";
 
 const Home = ({ name, title }) => {
   return (
-    <section id="home" className="min-height">
-      <img className="background" src={image} alt="" />
-      <div style={{ position: "absolute", top: "5rem", left: "2rem", width: "17rem" }}>
+    <section 
+      id="home" 
+      className="home-section"
+      style={{
+        backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${image})`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+      }}
+      aria-label="Home section"
+    >
+      <div className="home-content">
         <h1>{name}</h1>
         <h2>{title}</h2>
+        <div className="home-cta">
+          <a href="#about" className="cta-button">Learn More</a>
+        </div>
       </div>
-      <div style={{ position: "absolute", bottom: "3rem", left: "50%" }}>
-        <img src={arrowSvg} style={{ height: "3rem", width: "3rem" }} alt={imageAltText} />
+      <div className="home-arrow">
+        <a href="#about" aria-label="Scroll down to about section">
+          <img src={arrowSvg} alt="Scroll down arrow" />
+        </a>
       </div>
     </section>
   );
