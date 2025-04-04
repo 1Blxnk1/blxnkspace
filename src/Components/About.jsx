@@ -1,45 +1,40 @@
 /**
  * About component
- *
- * Space for you to describe more about yourself.
+ * 
+ * Showcasing professional background and technical passion.
  */
 
 import React from "react";
-
-/**
- * About background image
- *
- * Below is a sample image. Upload the image of your choice into the "images"
- * directory and import here for use. Then, set imageAltText to string that
- * represents what you see in that image.
- *
- * Need an image? Check out https://unsplash.com to download a image you
- * freely use on your site.
- */
 import image from "../images/midnight-fill.png";
 
-const imageAltText = "My favourite colour";
+const imageAltText = "Midnight blue digital abstract background";
 
 /**
- * Sort description that expands on your title on the Home component.
+ * Brief introduction aligned with professional branding.
  */
 const description =
-  "I'm a Computer Science student studying at Eduvos Midrand Campus (Previously known as Pearson Institute of Higher Education). I enjoy coding and expanding my skill set with projects.";
+  "I'm a Computer Science student at Eduvos Midrand, with hands-on experience in AI training, Linux systems, and full-stack development. I’m passionate about cybersecurity, systems engineering, and solving real-world problems with technology.";
 
 /**
- * List of some of skills or technologies you work on, are learning,
- * passionate about, or enjoy,
+ * Technical stack and key proficiencies.
  */
-const skillsList = ["Python", "Delphi", "SQL", "C++", "Database Design", "Graphic design"];
+const skillsList = [
+  "Python",
+  "C++",
+  "JavaScript (React Native)",
+  "SQL & Database Design",
+  "Linux Environments",
+  "Delphi",
+  "Technical Writing",
+  "Cloud Systems (AWS, Azure)",
+];
 
 /**
- * Use this to give more information about what you are passionate about,
- * how you best work, or even a quote. This will help someone learn more
- * about you on a professional level.
+ * Mission-focused statement to highlight mindset and vision.
  */
-
 const detailOrQuote =
-  "As a dedicated professional, I am deeply committed to leveraging my skills. I thrive on challenges and constantly seek out new learning opportunities to enhance my skill set and deliver exceptional results.";
+  "I approach every project with precision, discipline, and an ethical hacker’s mindset. I’m driven by curiosity and a desire to understand the deeper layers of technology—building secure, scalable systems while continuously evolving in the digital space.";
+
 const About = () => {
   return (
     <section className="padding" id="about">
@@ -53,7 +48,7 @@ const About = () => {
           textAlign: "center",
         }}
       >
-        <h2>About Myself</h2>
+        <h2>About Me</h2>
         <p className="large">{description}</p>
         <hr />
         <ul
