@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>World Map</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main id="map-container">
+    <img src="world.svg" alt="World Map" id="world-map-svg">
+    <div class="continent-labels">
+      <div id="label-north-america" class="continent-label">North America (Projects)</div>
+      <div id="label-europe" class="continent-label">Europe (Skills)</div>
+      <div id="label-asia" class="continent-label">Asia (Blog)</div>
+      <div id="label-africa" class="continent-label">Africa (Experience)</div>
+      <div id="label-south-america" class="continent-label">South America (Contact)</div>
+      <div id="label-oceania" class="continent-label"><a href="about.html" style="text-decoration: none; color: inherit;">Oceania (About Me)</a></div>
+    </div>
+    <div id="placeholder-content-view" class="placeholder-view" style="display: none;">
+      <button id="close-placeholder-view" class="close-button">&times;</button>
+      <h2 id="placeholder-title"></h2>
+      <p id="placeholder-text"></p>
+    </div>
+  </main>
+  <footer>
+    <p>© 2023 [Your Name]</p>
+  </footer>
+  <script src="script.js" defer></script>
+</body>
+</html>
