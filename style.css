@@ -1,0 +1,137 @@
+body {
+  background-color: #121212;
+  color: #E0E0E0;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.glossy-accent {
+  border: 1px solid #555;
+}
+
+#map-container {
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column; /* Arrange map and labels vertically */
+  align-items: center;
+  justify-content: center;
+  position: relative; /* For potential absolute positioning of labels later */
+}
+
+footer {
+  padding: 20px;
+  text-align: center;
+  background-color: #1A1A1A;
+}
+
+#world-map-svg {
+  width: 80%;
+  max-width: 1000px;
+  height: auto;
+  display: block; /* To enable margin auto for centering */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* About Me Page Styles */
+header h1 {
+  text-align: center;
+  color: #E0E0E0;
+  padding: 20px 0;
+}
+
+.timeline {
+  width: 80%;
+  max-width: 800px; /* Max width for timeline for better readability */
+  margin: 20px auto;
+  position: relative; /* For potential pseudo-elements later if a line is drawn */
+}
+
+.timeline-event {
+  border: 1px solid #444;
+  padding: 15px;
+  margin-bottom: 15px;
+  background-color: #222; /* Slightly lighter than body for contrast */
+  border-radius: 5px;
+}
+
+.timeline-date {
+  font-weight: bold;
+  color: #AAA; /* Lighter than #888 for better visibility on #222 */
+  margin-bottom: 5px;
+}
+
+.timeline-description {
+  line-height: 1.6;
+}
+
+.back-link {
+  display: block;
+  text-align: center;
+  margin: 20px auto;
+  padding: 10px 15px;
+  background-color: #333;
+  color: #E0E0E0;
+  text-decoration: none;
+  border-radius: 5px;
+  border: 1px solid #555;
+  width: fit-content; /* Make the link only as wide as its content */
+}
+
+.back-link:hover {
+  background-color: #444;
+  box-shadow: 0 0 8px #BBB;
+}
+
+.continent-labels {
+  display: flex; /* Arrange labels in a row */
+  flex-wrap: wrap; /* Allow wrapping if not enough space */
+  justify-content: center; /* Center the row of labels */
+  padding: 20px;
+}
+
+.continent-label {
+  background-color: rgba(40, 40, 40, 0.8); /* Semi-transparent dark background */
+  color: #E0E0E0;
+  padding: 8px 12px;
+  border-radius: 5px;
+  margin: 10px;
+  cursor: pointer;
+  border: 1px solid #555; /* From .glossy-accent */
+  transition: background-color 0.3s, box-shadow 0.3s; /* Smooth transition for hover */
+}
+
+.continent-label:hover {
+  background-color: #444;
+  box-shadow: 0 0 10px #FFF;
+}
+
+.placeholder-view {
+  background-color: #222; /* Slightly lighter than body for contrast */
+  border: 1px solid #555;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 5px;
+  text-align: center;
+  position: relative; /* For potential absolute positioning of the close button */
+  width: 70%; /* Take a good portion of the width */
+  max-width: 900px; /* But not too wide */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: transparent;
+  border: none;
+  color: #E0E0E0;
+  font-size: 24px; /* Made it a bit larger for easier clicking */
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close-button:hover {
+  color: #FFF;
+}
